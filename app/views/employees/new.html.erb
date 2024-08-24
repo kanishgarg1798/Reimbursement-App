@@ -1,0 +1,20 @@
+<h1>Add Employee</h1>
+
+<%= form_with model: @employee, local: true do |f| %>
+    <div class="form-group">
+        <%= f.label :name %>
+        <%= f.text_field :name, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+        <%= f.label :email %>
+        <%= f.email_field :email, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+        <%= f.label :company_id, 'Company' %>
+        <%= f.collection_select :company_id, Company.all, :id, :name, class: 'form-control' %>
+    </div>
+
+    <%= f.submit 'Add Employee', class: 'btn btn-primary' %>
+<% end %>
