@@ -15,6 +15,12 @@ set :keep_assets, 3
 
 set :db_local_clean, true
 set :db_remote_clean, true
+set :ssh_options, {
+  forward_agent: true,
+  auth_methods: ["publickey"],
+  keys: ["~/Downloads/aws-reimburse.pem"]
+
+}
 
 namespace :deploy do
     desc 'Restart application'
