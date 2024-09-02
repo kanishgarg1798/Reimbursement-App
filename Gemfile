@@ -64,6 +64,7 @@ group :development do
   gem 'capistrano-rbenv', '~> 2.1'
   gem 'capistrano-db-tasks', require: false
   gem 'capistrano-bundler', require: false
+  gem 'capistrano3-puma', require: false
   gem "web-console"
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
