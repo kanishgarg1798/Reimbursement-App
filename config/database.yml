@@ -21,7 +21,10 @@ test:
   database: reimbursement_portal_test
 
 production:
-  <<: *default
-  database: reimbursement_portal_production
-  username: reimbursement_portal
-  password: <%= ENV['REIMBURSEMENT_PORTAL_DATABASE_PASSWORD'] %>
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  database: reimbursement_portal
+  username: root
+  password: root@123
+  host: localhost

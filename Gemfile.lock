@@ -218,7 +218,7 @@ GEM
     psych (5.1.2)
       stringio
     public_suffix (5.1.1)
-    puma (5.6.8)
+    puma (4.3.12)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (2.2.9)
@@ -327,6 +327,7 @@ DEPENDENCIES
   aws-sdk-s3
   bootsnap
   capistrano (~> 3.10)
+  capistrano-bundler
   capistrano-db-tasks
   capistrano-rails (~> 1.5)
   capistrano-rbenv (~> 2.1)
@@ -340,7 +341,7 @@ DEPENDENCIES
   omniauth-google-oauth2
   omniauth-rails_csrf_protection (~> 1.0)
   pry
-  puma (~> 5.0)
+  puma (~> 4.3.9)
   rails (~> 7.0.8, >= 7.0.8.4)
   redis (~> 4.0)
   selenium-webdriver

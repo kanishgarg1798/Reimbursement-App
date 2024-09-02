@@ -6,7 +6,6 @@ require "capistrano-db-tasks"
 set :application, "reimbursement-portal"
 set :repo_url, "git@github.com:kanishgarg1798/Reimbursement-App.git"
 set :deploy_to, '/home/deploy/reimbursement-portal'
-set :branch, ENV["BRANCH"] if ENV["BRANCH"]
 
 set :linked_files, %w{config/database.yml config/master.key}
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
