@@ -6,7 +6,7 @@
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
-server '172.31.0.132', user: 'ubuntu', roles: %w{web app db}
+server '3.109.212.128', user: 'ubuntu', roles: %w{web app db}
 set :branch, "master"
 set :rails_env, 'production'
 
