@@ -3,13 +3,9 @@ lock "~> 3.19.1"
 
 require "capistrano-db-tasks"
 
-set :application, "reimbursement-portal"
-set :repo_url, "git@github.com:kanishgarg1798/Reimbursement-App.git"
-set :deploy_to, '/home/deploy/reimbursement-portal'
-
+set :rbenv_ruby_version, '3.0.0'
 set :linked_files, %w{config/database.yml config/master.key}
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
-
 set :keep_releases, 3
 set :keep_assets, 3
 
@@ -18,7 +14,7 @@ set :db_remote_clean, true
 set :ssh_options, {
   forward_agent: true,
   auth_methods: ["publickey"],
-  keys: ["~/.ssh/rid_rsa.pub"]
+  keys: ["~/Downloads/aws-reimburse.pem"]
 
 }
 
