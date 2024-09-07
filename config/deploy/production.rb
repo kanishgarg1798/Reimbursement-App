@@ -6,7 +6,7 @@
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
-set :application, "reimbursement-portal"
+set :application, "reimburse_port"
 set :repo_url, "git@github.com:kanishgarg1798/Reimbursement-App.git"
 set :branch, "main"
 set :rails_env, 'production'
