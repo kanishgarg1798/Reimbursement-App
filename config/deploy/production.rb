@@ -11,7 +11,7 @@ set :repo_url, "git@github.com:kanishgarg1798/Reimbursement-App.git"
 set :branch, "main"
 set :rails_env, 'production'
 set :deploy_to, "/home/deploy/#{fetch(:application)}"
-server '3.109.212.128', user: 'deploy', roles: %w{web app db}
+server '35.154.61.143', user: 'deploy', roles: %w{web app db}
 
 # role-based syntax
 # ==================
