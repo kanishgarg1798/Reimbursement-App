@@ -14,7 +14,7 @@ set :db_remote_clean, true
 set :ssh_options, {
   forward_agent: true,
   auth_methods: ["publickey"],
-  keys: ["~/.ssh/rid_rsa"]
+  keys: ["~/Downloads/reimburse-aws-test.pem"]
 
 }
 
